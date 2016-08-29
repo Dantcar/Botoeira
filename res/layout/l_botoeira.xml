@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffe6"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.botoeira.Botoeira" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/linearLayout2"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button13"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaTres"
+            android:text="@string/button03"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button12"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaSeis"
+            android:text="@string/button06"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button11"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaNove"
+            android:text="@string/button09"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/buttonRetrocede"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaRetrocede"
+            android:text="@string/buttonRetrocede" 
+            android:textSize="@dimen/numerosBotao"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_toEndOf="@+id/linearLayout1"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button15"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaDois"
+            android:text="@string/button02"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button14"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaCinco"
+            android:text="@string/button05"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button16"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaOito"
+            android:text="@string/button08"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button00"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaZero"
+            android:text="@string/button10" 
+            android:textSize="@dimen/numerosBotao"/>
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/TableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/linearLayout4"
+        android:layout_alignBottom="@+id/linearLayout4"
+        android:layout_toLeftOf="@+id/linearLayout4"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonIgual"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaResultado"
+            android:text="@string/buttonIgual" 
+            android:textSize="@dimen/numerosBotao"/>
+
+        <Button
+            android:id="@+id/buttonSair"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaSair"
+            android:text="@string/buttonSair"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/ButtonPositivoNegativo"
+            style="?android:attr/buttonStyleSmall"
+            android:textSize="@dimen/numerosBotao"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaInverteSinal"
+            android:text="@string/buttonPositivoNegativo" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/linearLayout3"
+        android:layout_alignTop="@+id/linearLayout3"
+        android:layout_toRightOf="@+id/linearLayout3"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonSoma"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaSoma"
+            android:text="@string/buttonSoma" 
+            android:textSize="@dimen/numerosBotao"/>
+
+        <Button
+            android:id="@+id/buttonSubtrai"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaSubtrai"
+            android:text="@string/buttonSubtrai" 
+            android:textSize="@dimen/numerosBotao"/>
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaClear"
+            android:text="@string/buttonClear" 
+            android:textSize="@dimen/numerosBotao"/>
+
+        <Button
+            android:id="@+id/buttonMultiplica"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaMultiplicar"
+            android:text="@string/buttonMultiplica"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaDividir"
+            android:text="@string/buttonDivide" 
+            android:textSize="@dimen/numerosBotao"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvVisor"
+        android:layout_alignLeft="@+id/tvVisor"
+        android:layout_below="@+id/tvVisor"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button01"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaUm"
+            android:text="@string/button01"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/button04"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaQuatro"
+            android:text="@string/button04" 
+            android:textSize="@dimen/numerosBotao"/>
+
+        <Button
+            android:id="@+id/button03"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaSete"
+            android:text="@string/button07"
+            android:textSize="@dimen/numerosBotao" />
+
+        <Button
+            android:id="@+id/buttonPonto"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="@dimen/larguraBotao"
+            android:layout_height="@dimen/alturaBotao"
+            android:onClick="teclaPonto"
+            android:text="@string/buttonPonto"
+            android:textSize="@dimen/numerosBotao" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTituloCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvVisor"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/tvVisor"
+        android:text="@string/tituloCalculadora"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/textoBotao" />
+
+    <TextView
+        android:id="@+id/tvVisor"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTituloCalculadora"
+        android:layout_marginTop="16dp"
+        android:background="#ffff00"
+        android:text="@string/zero"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/textoVisor" />
+
+</RelativeLayout>
