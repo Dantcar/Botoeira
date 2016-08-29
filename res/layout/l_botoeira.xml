@@ -257,7 +257,7 @@
     <TextView
         android:id="@+id/tvVisor"
         android:layout_width="match_parent"
-        android:layout_height="86dp"
+        android:layout_height="@dimen/alturaVisor"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvTituloCalculadora"
