@@ -19,12 +19,14 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Botoeira extends Activity {
 
 	//aqui variaveis 
 	private TextView tvVisor;
 	private String texto="";
+	private String msgTexto="";
 	private String hint="0";
 	private String valorInicial="";
 	private int operacao = 0;
@@ -43,9 +45,12 @@ public class Botoeira extends Activity {
 	public void teclaUm(View v){
 	int end = 0;
 	end = texto.length();
-	if (end<14){
-	texto = texto + "1";
-	tvVisor.setText(texto);
+		if (end<14){
+			texto = texto + "1";
+			tvVisor.setText(texto);
+		}
+		else{
+			toast();
 	}
 	}
 	
@@ -56,6 +61,10 @@ public class Botoeira extends Activity {
 			texto = texto + "2";
 			tvVisor.setText(texto);
 		}
+		else{
+			toast();
+		}
+			
 	}
 	
 	public void teclaTres(View v){
@@ -65,6 +74,9 @@ public class Botoeira extends Activity {
 			texto = texto + "3";
 			tvVisor.setText(texto);
 		}
+		else{
+			toast();
+		}
 	}
 	public void teclaQuatro(View v){
 		int end = 0;
@@ -72,6 +84,9 @@ public class Botoeira extends Activity {
 		if (end<14){
 			texto = texto + "4";
 			tvVisor.setText(texto);
+		}
+		else{
+			toast();
 		}
 	}
 	public void teclaCinco(View v){
@@ -81,6 +96,9 @@ public class Botoeira extends Activity {
 			texto = texto + "5";
 			tvVisor.setText(texto);
 		}
+		else{
+			toast();
+		}
 	}
 	public void teclaSeis(View v){
 		int end = 0;
@@ -88,6 +106,9 @@ public class Botoeira extends Activity {
 		if (end<14){
 			texto = texto + "6";
 			tvVisor.setText(texto);
+		}
+		else{
+			toast();
 		}
 	}
 	public void teclaSete(View v){
@@ -97,6 +118,9 @@ public class Botoeira extends Activity {
 			texto = texto + "7";
 			tvVisor.setText(texto);
 		}
+		else{
+			toast();
+		}
 	}
 	public void teclaOito(View v){
 		int end = 0;
@@ -104,6 +128,9 @@ public class Botoeira extends Activity {
 		if (end<14){
 			texto = texto + "8";
 			tvVisor.setText(texto);
+		}
+		else{
+			toast();
 		}
 	}
 	public void teclaNove(View v){
@@ -113,6 +140,9 @@ public class Botoeira extends Activity {
 			texto = texto + "9";
 			tvVisor.setText(texto);
 		}
+		else{
+			toast();
+		}
 	}
 	public void teclaZero(View v){
 		int end = 0;
@@ -120,6 +150,9 @@ public class Botoeira extends Activity {
 		if (end<14){
 			texto = texto + "0";
 			tvVisor.setText(texto);
+		}
+		else{
+			toast();
 		}
 	}
 	
@@ -242,7 +275,12 @@ public class Botoeira extends Activity {
 			
 			}
 			else{
-				resultado = "Error! tecle C";
+				msgTexto="Error divisão por zero";
+				Toast.makeText(this, msgTexto, Toast.LENGTH_LONG).show();
+				msgTexto="";
+				//resultado = "Error! tecle C";
+				resultado = 0+"";
+				
 			}
 				
 			break;
@@ -266,5 +304,9 @@ public class Botoeira extends Activity {
 		finish();
 	}
 	
+	public void toast(){
+		String msg = "Excedido 14 Digitos";
+		Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+	}
 	
 }
