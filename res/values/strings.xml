@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Botoeira</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">CalculadorDac</string>
     <string name="action_settings">Settings</string>
     <string name="button01">1</string>
     <string name="button02">2</string>
@@ -25,7 +24,7 @@
 	<string name="tvTexto">Resposta</string>
 	<string name="zero">0</string>
 	<string name="buttonPositivoNegativo">+/-</string>
-	<string name="buttonSair">Fim</string>
+	<string name="buttonSair">Quit</string>
 	<string name="digitalRelogio"/>
 	<string name="tituloCalculadora">Fatec Ipiranga - DAC</string>
 </resources>
